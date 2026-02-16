@@ -1,3 +1,4 @@
+import React from "react";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { render, screen, fireEvent, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
@@ -80,7 +81,8 @@ describe("Todo App", () => {
       expect(checkbox).toBeChecked();
 
       const todoText = screen.getByText("Complete this task");
-      expect(todoText).toHaveClass("completed");
+      const todoItem = todoText.closest("li");
+      expect(todoItem).toHaveClass("completed");
     });
   });
 
