@@ -25,7 +25,7 @@ jobs:
       - name: Run tests
         run: npm test 
 
-  docker build-and-push:
+  docker-build-and-push:
     needs: build-and-test
     runs-on: ubuntu-latest
     steps:
