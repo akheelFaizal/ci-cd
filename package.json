@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "dev": "webpack --mode development --watch",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "keywords": [
     "react",
@@ -23,11 +25,17 @@
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.23.0",
     "@babel/preset-react": "^7.22.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "@vitest/ui": "^1.0.4",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.8.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "jsdom": "^23.0.1",
     "style-loader": "^3.3.0",
+    "vitest": "^1.0.4",
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.0",
     "webpack-dev-server": "^4.15.0"
