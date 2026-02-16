@@ -3,7 +3,7 @@ import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([]); 
 
   const addTodo = (text) => {
     const newTodo = {
