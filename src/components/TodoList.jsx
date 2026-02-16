@@ -21,7 +21,7 @@ function TodoList({ todos, onDeleteTodo, onToggleTodo }) {
                   onClick={() => onDeleteTodo(todo.id)}
                   className="delete-button"
                 >
-                  Delete
+                  Delete Task
                 </button>
               </div>
             </li>
