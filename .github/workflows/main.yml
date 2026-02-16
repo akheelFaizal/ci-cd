@@ -28,6 +28,7 @@ jobs:
   docker-build-and-push:
     needs: build-and-test
     runs-on: ubuntu-latest
+    environment: ci-cd   
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
